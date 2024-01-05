@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Подбор программы</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a href="#">
+        <img class="main-header__logo" src="placeholder" width="70" height="59" alt="Cat Energy">
+      </a>
+      <span class="main-header__company-name"><b>CAT</b> ENERGY</span>
+
+      <nav class="main-nav">
+
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden"> Открыть меню </span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a href="form.html">Подбор продукции</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="questionnaire">
+        <h1>Подбор программы</h1>
+        <h2 class="visually-hidden">Опрос</h2>
+        <p class="questionnaire__text">Заполните анкету, и мы подберем
+          программу питания для вашего кота</p>
+          <form>
+          <fieldset>
+            <label>Имя*
+            <input type="text" name="nickname" value="БАРСИК">
+          </label>
+            <label>Вес (кг):*
+            <input type="text" name="weight" value="7">
+          </label>
+            <label>Возраст(лет):
+            <input type="text" name="weight" value="7">
+          </label>
+          </fieldset>
+        </form>
+        <form>
+
+        <label>
+          <input type="radio" name="goal" value="slim" checked>
+          Похудение
+        </label>
+        <label>
+          <input type="radio" name="goal" value="mass" >
+          Набор массы
+        </label>
+        <label>
+          <input type="radio" name="goal" value="help" >
+          Не знаю (нужен ваш совет)
+        </label>
+        </form>
+      </section>
+      <section class="owner">
+        <h2>Контактные данные (владельца кота)</h2>
+        <form class="owner__form">
+          <fieldset>
+            <label>E-mail:*
+            <input type="text" name="email" value="кuklachev@gmail.com">
+          </label>
+            <label>Телефон:*
+            <input type="text" name="phone" value="8 (960) 900-60-90">
+          </label>
+          </fieldset>
+        </form>
+      </section>
+      <section class="comment">
+        <h2>Комментарий</h2>
+        <textarea name="comment"placeholder="Расскажите обо всех повадках кота"></textarea>
+      </section>
+      <section class="additional-info">
+        <h2>Дополнительно</h2>
+        <form>
+          <label>
+            <input type="checkbox" name="complements" value="sweeetener" checked>
+            Сахарозаменитель
+          </label>
+          <label>
+            <input type="checkbox" name="complements" value="water">
+            Питьевая вода
+          </label>
+          <label>
+            <input type="checkbox" name="complements" value="milk">
+            Молоко
+          </label>
+          <label>
+            <input type="checkbox" name="complements" value="vitamins">
+            Витамины
+          </label>
+        </form>
+        <p>* — Обязательные поля</p>
+        <button class="button primary_button">Отправить заявку</button>
+      </section>
+      <section class="address">
+        <h2 class="visually-hidden">Адрес</h2>
+        <div class="address__wrapper">
+        <p class="address__slogan">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="address__info">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="address__city">Санкт-Петербург</p>
+      </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__name">
+          <span class="main-footer__company-name"><b>CAT</b> ENERGY</span>
+        </div>
+        <div class="main-footer__social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#"> <img src="placeholder" alt="Vkontakte" width="28"height="22"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#"><img src="placeholder" alt="Youtube" width="28"height="22"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="#"><img src="placeholder" alt="Telegram" width="28"height="22"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <span class="copyright__text">HTML Academy</span>
+          <a class="copiright__link" href="#"><img src="placeholder" alt="HTML Academy" width="27" height="34"></a>
+        </div>
+      </div>
+    </footer>
+    </body>
+    </html>
